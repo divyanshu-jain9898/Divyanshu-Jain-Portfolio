@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Inter, Segoe UI, Arial, sans-serif">
+  <defs>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#16243a"/></pattern>
+    <radialGradient id="f" cx=".45" cy=".4" r=".7"><stop offset="0" stop-color="#e3ebf4"/><stop offset="1" stop-color="#8396ad"/></radialGradient>
+  </defs>
+  <rect width="1280" height="720" fill="#0a111c"/><rect width="1280" height="720" fill="url(#g)"/>
+  <text x="56" y="80" font-size="30" font-weight="700" fill="#e8eef6">Flange · automated bolt insertion</text>
+  <text x="56" y="112" font-size="17" fill="#8a9ab0">Custom command resolves bolt length, diameter and quantity from the bolt spec</text>
+  <!-- flange face -->
+  <g transform="translate(400 410)">
+    <circle r="230" fill="url(#f)" stroke="#0a111c" stroke-width="4"/>
+    <circle r="150" fill="#5f7189"/><circle r="104" fill="#0a111c" stroke="#9fb2c7" stroke-width="6"/>
+    <circle r="190" fill="none" stroke="#4fe3c1" stroke-width="2" stroke-dasharray="6 8"/>
+    <g fill="#f7b23b" stroke="#3a2400" stroke-width="3">
+      <circle cx="190" cy="0" r="20"/><circle cx="134.4" cy="134.4" r="20"/><circle cx="0" cy="190" r="20"/><circle cx="-134.4" cy="134.4" r="20"/>
+      <circle cx="-190" cy="0" r="20"/><circle cx="-134.4" cy="-134.4" r="20"/><circle cx="0" cy="-190" r="20"/><circle cx="134.4" cy="-134.4" r="20"/>
+    </g>
+    <path d="M-190 0H190" stroke="#4fe3c1" stroke-width="1.5" stroke-dasharray="3 6"/>
+    <text x="-60" y="-200" font-size="15" fill="#0a111c" font-weight="700">BCD</text>
+  </g>
+  <!-- side section: bolt through two flanges -->
+  <g transform="translate(760 250)">
+    <rect x="0" y="40" width="54" height="260" rx="6" fill="#9fb2c7"/><rect x="70" y="40" width="54" height="260" rx="6" fill="#9fb2c7"/>
+    <rect x="54" y="60" width="16" height="220" fill="#4fe3c1"/>
+    <rect x="-40" y="76" width="204" height="18" rx="4" fill="#f7b23b"/><rect x="-40" y="246" width="204" height="18" rx="4" fill="#f7b23b"/>
+    <rect x="-58" y="68" width="22" height="34" rx="4" fill="#d9a650"/><rect x="160" y="68" width="22" height="34" rx="4" fill="#d9a650"/>
+    <rect x="-58" y="238" width="22" height="34" rx="4" fill="#d9a650"/><rect x="160" y="238" width="22" height="34" rx="4" fill="#d9a650"/>
+    <path d="M-40 330H164" stroke="#4fe3c1" stroke-width="2"/><path d="M-40 320v20M164 320v20" stroke="#4fe3c1" stroke-width="2"/>
+    <text x="10" y="360" font-size="16" fill="#4fe3c1">Bolt length = resolved</text>
+  </g>
+  <!-- inputs panel -->
+  <g transform="translate(1000 230)" font-size="16">
+    <rect width="240" height="300" rx="16" fill="#0e1622" stroke="#24344c"/>
+    <text x="20" y="36" font-size="13" fill="#7f8da1" letter-spacing="2">RESOLVED AT RUNTIME</text>
+    <g fill="#c9d4e2">
+      <text x="20" y="78">Flange rating</text><text x="20" y="104" fill="#e8eef6" font-weight="600">Class 300</text>
+      <text x="20" y="142">Pipe schedule</text><text x="20" y="168" fill="#e8eef6" font-weight="600">STD</text>
+      <text x="20" y="206">Gasket thickness</text><text x="20" y="232" fill="#e8eef6" font-weight="600">3 mm</text>
+      <text x="20" y="272" fill="#4fe3c1">→ 8 × stud bolts placed</text>
+    </g>
+  </g>
+</svg>

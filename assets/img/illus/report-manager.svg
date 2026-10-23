@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Inter, Segoe UI, Arial, sans-serif">
+  <defs><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#16243a"/></pattern></defs>
+  <rect width="1280" height="720" fill="#0a111c"/><rect width="1280" height="720" fill="url(#g)"/>
+  <text x="56" y="80" font-size="30" font-weight="700" fill="#e8eef6">Report Manager</text>
+  <text x="56" y="112" font-size="17" fill="#8a9ab0">Calculated reports · MTO summaries · native Smart 3D templates</text>
+  <!-- formula bar -->
+  <g transform="translate(56 150)">
+    <rect width="760" height="64" rx="14" fill="#0e1622" stroke="#24344c"/>
+    <text x="22" y="40" font-size="18" fill="#7f8da1" font-family="JetBrains Mono, Consolas, monospace">ƒx</text>
+    <text x="70" y="40" font-size="18" fill="#e8eef6" font-family="JetBrains Mono, Consolas, monospace">[IJRteLength.Length] * <tspan fill="#4fe3c1">[IJWeight.UnitWeight]</tspan></text>
+  </g>
+  <!-- table -->
+  <g transform="translate(56 240)" font-size="17">
+    <rect width="760" height="410" rx="16" fill="#0e1622" stroke="#24344c"/>
+    <rect width="760" height="54" rx="16" fill="#132034"/>
+    <g fill="#9fb2c7" font-size="14" letter-spacing="1.5"><text x="24" y="34">PIPE RUN</text><text x="250" y="34">SPEC</text><text x="390" y="34">NPD</text><text x="500" y="34">LENGTH</text><text x="630" y="34">WEIGHT</text></g>
+    <g fill="#c9d4e2">
+      <text x="24" y="98">P-1201</text><text x="250" y="98">CS150</text><text x="390" y="98">8"</text><text x="500" y="98">42.6 m</text><text x="630" y="98" fill="#4fe3c1">2,786 kg</text>
+      <text x="24" y="150">P-1202</text><text x="250" y="150">CS150</text><text x="390" y="150">6"</text><text x="500" y="150">38.1 m</text><text x="630" y="150" fill="#4fe3c1">1,077 kg</text>
+      <text x="24" y="202">P-1203</text><text x="250" y="202">CS300</text><text x="390" y="202">10"</text><text x="500" y="202">29.4 m</text><text x="630" y="202" fill="#4fe3c1">1,758 kg</text>
+      <text x="24" y="254">LS-1204</text><text x="250" y="254">SS150</text><text x="390" y="254">4"</text><text x="500" y="254">51.0 m</text><text x="630" y="254" fill="#4fe3c1">822 kg</text>
+      <text x="24" y="306">ST-1302</text><text x="250" y="306">AS300</text><text x="390" y="306">3"</text><text x="500" y="306">17.8 m</text><text x="630" y="306" fill="#4fe3c1">201 kg</text>
+    </g>
+    <path d="M24 340H736" stroke="#24344c"/>
+    <text x="24" y="382" fill="#e8eef6" font-weight="600">Grouped total</text><text x="630" y="382" fill="#f7b23b" font-weight="700">6,644 kg</text>
+  </g>
+  <!-- side: build & deploy -->
+  <g transform="translate(860 150)" font-size="16">
+    <rect width="364" height="500" rx="16" fill="#0e1622" stroke="#24344c"/>
+    <text x="24" y="40" font-size="13" fill="#7f8da1" letter-spacing="2">BUILD &amp; DEPLOY</text>
+    <g fill="#c9d4e2">
+      <g transform="translate(24 70)"><circle cx="10" cy="10" r="10" fill="#4fe3c1"/><text x="34" y="16">Validate against live schema</text></g>
+      <g transform="translate(24 120)"><circle cx="10" cy="10" r="10" fill="#4fe3c1"/><text x="34" y="16">Preview 200 rows</text></g>
+      <g transform="translate(24 170)"><circle cx="10" cy="10" r="10" fill="#4fe3c1"/><text x="34" y="16">Export report to Excel</text></g>
+      <g transform="translate(24 220)"><circle cx="10" cy="10" r="10" fill="#4fe3c1"/><text x="34" y="16">Build native template files</text></g>
+      <g transform="translate(24 270)"><circle cx="10" cy="10" r="10" fill="#f7b23b"/><text x="34" y="16">Deploy to catalog via Bulkload</text></g>
+      <g transform="translate(24 320)"><circle cx="10" cy="10" r="10" fill="none" stroke="#4fe3c1" stroke-width="2"/><text x="34" y="16">Read back &amp; verify</text></g>
+    </g>
+    <rect x="24" y="400" width="316" height="52" rx="12" fill="#4fe3c1"/><text x="182" y="432" text-anchor="middle" fill="#032019" font-weight="700">Deploy to Catalog</text>
+  </g>
+</svg>

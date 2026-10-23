@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Divyanshu Jain — SP3D Developer · Interactive Showcase</title>
+  <meta name="description" content="An immersive, chapter-by-chapter tour of Divyanshu Jain's SP3D / Smart 3D work: an MCP-powered AI assistant, automation and bulkload tools, CAD → SP3D conversion, a browser 3D viewer and more.">
+  <meta name="theme-color" content="#04050a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Divyanshu Jain — SP3D Developer · Interactive Showcase">
+  <meta property="og:description" content="Smart 3D automation, an MCP-powered SP3D AI Assistant, bulkload tools and CAD → SP3D conversion — told in 16 cinematic chapters.">
+  <meta property="og:url" content="https://divyanshu-jain9898.github.io/Divyanshu-Jain-Portfolio/showcase/">
+  <meta property="og:image" content="https://divyanshu-jain9898.github.io/Divyanshu-Jain-Portfolio/showcase/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="preload" as="image" href="media/img/portrait-cutout.webp">
+  <script>document.documentElement.classList.replace("no-js", "js");</script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-next" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-prev" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></g></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5Z" fill="currentColor"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><g fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></g></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 5 5L20 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></g></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></g></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-in" viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1v5.46h-4v-4.84c0-1.16-.02-2.64-1.61-2.64-1.61 0-1.86 1.26-1.86 2.56v4.92h-4v-11Z" fill="currentColor"/></symbol>
+    <symbol id="i-cube" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="m3 7 9 5 9-5M12 12v10"/></g></symbol>
+    <symbol id="i-restart" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></g></symbol>
+    <symbol id="i-flip" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></g></symbol>
+    <symbol id="i-power" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v9"/><path d="M6.3 6.3a8 8 0 1 0 11.4 0"/></g></symbol>
+  </svg>
+
+  <canvas id="stage" aria-hidden="true"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ===== Top chrome ===== -->
+  <header class="top">
+    <button class="brand" data-go="0" aria-label="Divyanshu Jain — back to the first chapter">
+      <span class="mark" aria-hidden="true">DJ</span>
+      <span class="brand-txt">Divyanshu Jain<small>SP3D Developer</small></span>
+    </button>
+    <div class="top-actions">
+      <button class="chip-btn" id="btn-auto" aria-pressed="false" aria-label="Play the tour automatically"><svg><use href="#i-play"/></svg><span>Auto-play</span></button>
+      <button class="chip-btn" data-open="chapters" aria-label="Open the chapter menu"><svg><use href="#i-grid"/></svg><span>Chapters</span></button>
+      <button class="icon-btn" id="btn-full" aria-label="Toggle full screen"><svg><use href="#i-expand"/></svg></button>
+    </div>
+  </header>
+
+  <main id="deck" aria-roledescription="presentation" aria-label="Divyanshu Jain — interactive portfolio">
+
+    <!-- 01 INTRO -->
+    <section class="page p-intro" id="intro" data-title="Introduction" data-sub="Who I am" data-shape="plant" data-pal="#5be3ff,#ff8f4d" data-layout='{"x":1.9,"y":-1.0,"z":-1,"rx":0.3,"ry":-0.5,"s":0.92,"spin":0.035,"op":0.85}' aria-label="Introduction">
+      <div class="wrap intro-grid">
+        <div class="intro-copy">
+          <p class="kicker" data-a>Interactive portfolio · 16 chapters</p>
+          <h1 class="mega" data-split aria-label="Divyanshu Jain">Divyanshu<br>Jain</h1>
+          <p class="role" data-a>SP3D Developer <i>/</i> Smart 3D automation <i>/</i> Engineering AI</p>
+          <p class="lede" data-a>I build C#&nbsp;/&nbsp;.NET tools, an MCP-powered AI assistant and CAD&nbsp;→&nbsp;Smart&nbsp;3D conversion pipelines that take the repetitive work out of plant design.</p>
+          <p class="status" data-a><span class="dot" aria-hidden="true"></span>Working on SP3D, Smart 3D &amp; engineering automation</p>
+          <div class="cta-row" data-a>
+            <button class="btn btn-primary magnetic" data-next>Start the tour <svg><use href="#i-next"/></svg></button>
+            <button class="btn btn-ghost magnetic" data-open="chapters">All chapters</button>
+          </div>
+        </div>
+        <div class="intro-visual" data-a>
+          <div class="arch tilt">
+            <span class="arch-glow" aria-hidden="true"></span>
+            <img src="media/img/portrait-cutout.webp" alt="Portrait of Divyanshu Jain" width="445" height="649" fetchpriority="high">
+            <span class="arch-sweep" aria-hidden="true"></span>
+          </div>
+          <span class="float-tag ft1" aria-hidden="true"><span>C# / .NET</span></span>
+          <span class="float-tag ft2" aria-hidden="true"><span>Smart 3D API</span></span>
+          <span class="float-tag ft3" aria-hidden="true"><span>MCP · 119 tools</span></span>
+          <span class="float-tag ft4" aria-hidden="true"><span>Revit → SP3D</span></span>
+        </div>
+      </div>
+      <p class="hint" data-a><kbd>←</kbd><kbd>→</kbd> keys · swipe · scroll — or use the buttons below</p>
+    </section>
+
+    <!-- 02 ABOUT -->
+    <section class="page p-about" id="about" data-title="About" data-sub="Engineering, written in code" data-shape="helix" data-pal="#5be3ff,#9d8cff" data-layout='{"x":5.0,"y":0,"z":-2,"rx":0.15,"ry":0,"s":1,"spin":0.16,"op":0.75}' aria-label="About">
+      <div class="wrap about-grid">
+        <div class="holo" data-a>
+          <span class="holo-grid" aria-hidden="true"></span>
+          <img src="media/img/portrait-full.webp" alt="Divyanshu Jain" width="425" height="1023" loading="lazy">
+          <span class="holo-scan" aria-hidden="true"></span>
+          <span class="holo-label" aria-hidden="true"><b>ID</b> Divyanshu Jain · SP3D Developer</span>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow" data-a>About</p>
+          <h2 class="title" data-split>Plant-design engineering, <em>written in code.</em></h2>
+          <p class="lede" data-a>I sit between engineering and software. I customize and administer <b>Intergraph Smart&nbsp;3D</b> for EPC projects — catalog &amp; specifications, smart symbols, hangers &amp; supports, drawings and reports — and write the C#&nbsp;/&nbsp;VB.NET tools that automate the work around them. I also build AI products for AEC.</p>
+          <div class="stats">
+            <div class="stat" data-a><b><span data-count="15">0</span><em>+</em></b><span>SP3D tools &amp; add-ins built</span></div>
+            <div class="stat" data-a><b><span data-count="119">0</span></b><span>Smart&nbsp;3D tools exposed over MCP</span></div>
+            <div class="stat" data-a><b><span data-count="4">0</span></b><span>model sources auto-converted to SP3D</span></div>
+          </div>
+          <div class="focus">
+            <div class="focus-card tilt" data-a><svg><use href="#i-cube"/></svg><b>Smart 3D customization</b><span>Catalog, specs, symbols, hangers &amp; supports, drawings, reports, admin.</span></div>
+            <div class="focus-card tilt" data-a><svg viewBox="0 0 24 24"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M13.5 5l-3 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Custom commands &amp; tools</b><span>C# / VB.NET on the Smart 3D object model.</span></div>
+            <div class="focus-card tilt" data-a><svg viewBox="0 0 24 24"><path d="M4 7h12l-3-3M20 17H8l3 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><b>CAD → SP3D conversion</b><span>Revit, Plant 3D, E3D and P&amp;ID into Smart 3D.</span></div>
+            <div class="focus-card tilt" data-a><svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><rect x="7" y="7" width="10" height="10" rx="2"/></g></svg><b>AI for engineering</b><span>MCP, LLMs, RAG, OCR and computer vision.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 SKILLS -->
+    <section class="page p-skills" id="skills" data-title="Skills" data-sub="The orbit of my toolkit" data-shape="orbits" data-pal="#5be3ff,#ff8f4d" data-layout='{"x":-3.4,"y":0,"z":-1.5,"rx":0.35,"ry":0.2,"s":1.05,"spin":0.07,"op":0.75}' aria-label="Skills">
+      <div class="wrap skills-grid">
+        <div class="skills-head">
+          <p class="eyebrow" data-a>Skills</p>
+          <h2 class="title" data-split>A Smart&nbsp;3D specialist <em>who ships software.</em></h2>
+          <p class="lede" data-a>Pick an orbit to explore each part of the toolkit.</p>
+        </div>
+        <div class="orbit-sys" data-a>
+          <div class="orbit-spin">
+            <svg class="orbit-rings" viewBox="0 0 400 400" aria-hidden="true"><ellipse cx="200" cy="200" rx="190" ry="190"/><ellipse cx="200" cy="200" rx="135" ry="135"/><ellipse cx="200" cy="200" rx="80" ry="80"/></svg>
+            <div class="orbit-nodes" role="tablist" aria-label="Skill areas" id="orbit-nodes"></div>
+          </div>
+          <div class="orbit-core" aria-hidden="true"><b>SP3D</b><span>core</span></div>
+        </div>
+        <div class="skill-panel glass" id="skill-panel" role="tabpanel" aria-live="polite" data-a></div>
+      </div>
+    </section>
+
+    <!-- 04 EXPERIENCE -->
+    <section class="page p-xp" id="experience" data-title="Experience" data-sub="What I've delivered" data-shape="wave" data-pal="#ff8f4d,#5be3ff" data-layout='{"x":0,"y":-2.2,"z":-1,"rx":0.45,"ry":-0.2,"s":1.1,"spin":0.02,"op":0.75}' aria-label="Experience">
+      <div class="wrap">
+        <div class="head-row">
+          <div>
+            <p class="eyebrow" data-a>Experience</p>
+            <h2 class="title" data-split>What I've <em>built and delivered.</em></h2>
+          </div>
+          <p class="lede narrow" data-a>Flip a card for the detail.</p>
+        </div>
+        <div class="xp-track">
+          <article class="xp-card" data-a>
+            <div class="xp-inner">
+              <div class="xp-face xp-front">
+                <span class="xp-tag">EPC projects</span>
+                <h3>SP3D Developer &amp; Smart&nbsp;3D Administrator</h3>
+                <p>Piping · structure · equipment · hangers &amp; supports · drawings</p>
+                <div class="xp-projects">
+                  <span><b>CRPO — Saudi Aramco project</b>Hangers &amp; supports · valve symbols · bolt command</span>
+                  <span><b>VG — Venture Global project</b>Hangers &amp; supports · name rules · admin commands</span>
+                </div>
+                <button class="xp-flip" aria-label="Show details: SP3D Developer and Smart 3D Administrator"><svg><use href="#i-flip"/></svg>Details</button>
+              </div>
+              <div class="xp-face xp-back">
+                <ul>
+                  <li>C# / VB.NET custom commands automating modeling and admin workflows.</li>
+                  <li>Catalog &amp; specification development with bulkload sheets and business rules.</li>
+                  <li>Custom 3D symbols — valves, flanges, equipment, instruments, stairs &amp; ladders.</li>
+                  <li>Isometrics, GADs, MTOs, view styles, graphic and label rules.</li>
+                  <li>Admin automation: IFC, permission groups, naming rules, piping callouts.</li>
+                  <li>Revit / Plant 3D → S3D workflows; Navisworks extraction.</li>
+                </ul>
+                <button class="xp-flip" aria-label="Back to summary"><svg><use href="#i-flip"/></svg>Back</button>
+              </div>
+            </div>
+          </article>
+          <article class="xp-card" data-a>
+            <div class="xp-inner">
+              <div class="xp-face xp-front">
+                <span class="xp-tag">AI for AEC</span>
+                <h3>Design Technology Specialist</h3>
+                <p>AI products for architecture, engineering &amp; construction</p>
+                <div class="xp-chips"><span>PDF → CAD</span><span>Revit AI Assistant</span><span>Hologram assistant</span><span>LLM deployment</span></div>
+                <button class="xp-flip" aria-label="Show details: Design Technology Specialist"><svg><use href="#i-flip"/></svg>Details</button>
+              </div>
+              <div class="xp-face xp-back">
+                <ul>
+                  <li>PDF → CAD conversion and Revit sheet → CAD deliverables.</li>
+                  <li>CAD spell checker for drawing text and annotations.</li>
+                  <li>Revit AI Assistant for model queries and design workflows.</li>
+                  <li>Multilingual PDF → English translation.</li>
+                  <li>Hologram assistant with a voice-driven avatar; LLM deployment.</li>
+                </ul>
+                <button class="xp-flip" aria-label="Back to summary"><svg><use href="#i-flip"/></svg>Back</button>
+              </div>
+            </div>
+          </article>
+          <article class="xp-card" data-a>
+            <div class="xp-inner">
+              <div class="xp-face xp-front">
+                <span class="xp-tag">Python · LLMs</span>
+                <h3>Software Development</h3>
+                <p>Conversational AI and team-based delivery</p>
+                <div class="xp-chips"><span>LLM chatbot</span><span>Python</span><span>Agile</span><span>Version control</span></div>
+                <button class="xp-flip" aria-label="Show details: Software Development"><svg><use href="#i-flip"/></svg>Details</button>
+              </div>
+              <div class="xp-face xp-back">
+                <ul>
+                  <li>Built a chatbot with Python and a large language model.</li>
+                  <li>Agile delivery, version control and team-based development.</li>
+                </ul>
+                <button class="xp-flip" aria-label="Back to summary"><svg><use href="#i-flip"/></svg>Back</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 AI ASSISTANT -->
+    <section class="page p-ai" id="ai" data-title="SP3D AI Assistant" data-sub="Talk to a live model" data-shape="neural" data-pal="#9d8cff,#5be3ff" data-layout='{"x":4.3,"y":0.1,"z":-2.5,"rx":0.1,"ry":0,"s":1,"spin":0.1,"op":0.85}' aria-label="SP3D AI Assistant">
+      <div class="wrap ai-grid">
+        <div class="ai-copy">
+          <p class="eyebrow" data-a>SP3D AI Assistant · flagship</p>
+          <h2 class="title" data-split>Talk to a live <em>Smart&nbsp;3D</em> model.</h2>
+          <p class="lede" data-a>A local LLM plans the work and calls Smart&nbsp;3D tools exposed by my MCP server. Reads run straight away; every change is prepared as a preview and committed only after you approve it.</p>
+          <div class="facts">
+            <div class="fact" data-a><b data-count="119">119</b><span>MCP tools exposed</span></div>
+            <div class="fact" data-a><b>Local</b><span>LLM running on the host GPU</span></div>
+            <div class="fact" data-a><b>Review</b><span>preview → approve → commit</span></div>
+          </div>
+          <p class="clients" data-a><span>Works with</span> Claude Desktop · Claude Code · Codex · Cursor · VS Code · Gemini CLI · LM Studio</p>
+          <div class="cta-row" data-a>
+            <button class="btn btn-primary magnetic" data-video="sp3d-ai-assistant"><svg><use href="#i-play"/></svg>Watch the demo · 3:40</button>
+          </div>
+        </div>
+        <div class="chat glass" data-a>
+          <div class="chat-bar"><i></i><i></i><i></i><span>SP3D AI Assistant</span><em>Interactive simulation</em></div>
+          <div class="chat-log" id="chat-log" aria-live="polite"></div>
+          <div class="chat-prompts" role="group" aria-label="Try a prompt">
+            <button class="prompt" data-script="valve">Add a gate valve with flanges on the selected 10" line</button>
+            <button class="prompt" data-script="count">How many pipe runs are in this model?</button>
+            <button class="prompt" data-script="sync">Sync the model with the catalog</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 MOBILE -->
+    <section class="page p-mobile" id="mobile" data-title="AI Assistant · Mobile" data-sub="Smart 3D in your pocket" data-shape="signal" data-pal="#5be3ff,#9d8cff" data-layout='{"x":-1.2,"y":0,"z":-2.5,"rx":0,"ry":0.25,"s":0.95,"spin":0,"op":0.55}' aria-label="SP3D AI Assistant for Android">
+      <div class="wrap mobile-grid">
+        <div class="phone-stage" data-a>
+          <div class="phone">
+            <video data-src="media/video/sp3d-ai-mobile.mp4" poster="media/posters/sp3d-ai-mobile-portrait.webp" muted loop playsinline preload="none" aria-label="Android app driving Smart 3D"></video>
+            <span class="phone-notch" aria-hidden="true"></span>
+          </div>
+          <span class="phone-ring r1" aria-hidden="true"></span><span class="phone-ring r2" aria-hidden="true"></span><span class="phone-ring r3" aria-hidden="true"></span>
+        </div>
+        <div class="mobile-copy">
+          <p class="eyebrow" data-a>SP3D AI Assistant · Android</p>
+          <h2 class="title" data-split>Smart&nbsp;3D, <em>in your pocket.</em></h2>
+          <p class="lede" data-a>The phone becomes a remote screen and keyboard for the assistant. The same agent, MCP tools and approvals run on your own PC — nothing goes to a cloud service.</p>
+          <ol class="flow" data-a>
+            <li class="flow-node"><b>Android app</b><span>prompt &amp; approve</span></li>
+            <li class="flow-node"><b>Host relay</b><span>pinned HTTPS · LAN or Tailscale</span></li>
+            <li class="flow-node"><b>SP3D gateway</b><span>agent + MCP server in the VM</span></li>
+            <li class="flow-node"><b>Smart 3D</b><span>live model · saved actions</span></li>
+          </ol>
+          <div class="cta-row" data-a>
+            <button class="btn btn-primary magnetic" data-video="sp3d-ai-mobile"><svg><use href="#i-play"/></svg>Watch the demo · 0:38</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 WEB3D -->
+    <section class="page p-web3d" id="web3d" data-title="SP3D → Web3D" data-sub="Plants in any browser" data-shape="globe" data-pal="#5be3ff,#45f0c8" data-layout='{"x":4.4,"y":0.6,"z":-3,"rx":0.3,"ry":0,"s":1,"spin":0.08,"op":0.75}' aria-label="SP3D to Web3D">
+      <div class="wrap web-grid">
+        <div class="web-copy">
+          <p class="eyebrow" data-a>SP3D → Web3D · live demo</p>
+          <h2 class="title" data-split>A Smart&nbsp;3D plant, <em>in any browser.</em></h2>
+          <p class="lede" data-a>Exports a plant into one self-contained web viewer — model tree, properties, measuring, sections, comments and simulations — that anyone can open without a Smart&nbsp;3D licence.</p>
+          <div class="facts">
+            <div class="fact" data-a><b data-count="7153" data-format="comma">0</b><span>objects in the sample plant</span></div>
+            <div class="fact" data-a><b>≈10&nbsp;MB</b><span>single-file export</span></div>
+            <div class="fact" data-a><b>0</b><span>licences needed to view</span></div>
+          </div>
+        </div>
+        <div class="browser glass" data-a>
+          <div class="browser-bar"><i></i><i></i><i></i><span>sp3d-to-web3d · sample plant</span></div>
+          <div class="browser-stage">
+            <img src="media/shots/web3d-operation.webp" alt="SP3D to Web3D viewer running a plant-operation simulation" loading="lazy">
+            <div class="browser-cta">
+              <button class="btn btn-primary magnetic" data-open="viewer"><svg><use href="#i-cube"/></svg>Launch the live 3D viewer</button>
+              <span>≈16 MB · drag to orbit, click any object for its properties</span>
+            </div>
+          </div>
+        </div>
+        <div class="filmstrip" data-a aria-label="Simulations and renders">
+          <div class="film-track" id="film-track"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08 CONVERSION -->
+    <section class="page p-conv" id="conversion" data-title="CAD → SP3D" data-sub="Plant 3D & Revit, converted" data-shape="plant" data-pal="#ff8f4d,#5be3ff" data-layout='{"x":4.6,"y":-0.2,"z":-3,"rx":0.35,"ry":-0.6,"s":0.85,"spin":0.05,"op":0.7}' aria-label="CAD to SP3D conversion">
+      <div class="wrap conv-grid">
+        <div class="conv-copy">
+          <p class="eyebrow" data-a>3D conversion</p>
+          <h2 class="title" data-split>Plant&nbsp;3D &amp; Revit → <em>Smart&nbsp;3D, automatically.</em></h2>
+          <div class="tabs" role="tablist" aria-label="Conversion source" data-a>
+            <button role="tab" aria-selected="true" data-conv="plant3d">Plant 3D → SP3D</button>
+            <button role="tab" aria-selected="false" data-conv="revit">Revit → SP3D</button>
+          </div>
+          <div class="conv-detail" id="conv-detail" data-a></div>
+          <p class="conv-also" data-a>Also built: <b>P&amp;ID → SP3D</b> (computer vision reads P&amp;ID PDFs) and <b>E3D → S3D</b> migration.</p>
+        </div>
+        <div class="compare glass" data-a>
+          <div class="compare-stage" id="compare">
+            <img class="cmp-after" alt="" loading="lazy">
+            <div class="cmp-before-wrap"><img class="cmp-before" alt="" loading="lazy"></div>
+            <span class="cmp-label cmp-l"></span><span class="cmp-label cmp-r">Smart 3D</span>
+            <div class="cmp-handle" aria-hidden="true"><span></span></div>
+            <input class="cmp-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare the source model with the Smart 3D result">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 09 ADMIN TOOLS -->
+    <section class="page p-tools" id="tools" data-title="Admin & modeling tools" data-sub="One workspace, every task" data-shape="lattice" data-pal="#5be3ff,#9d8cff" data-layout='{"x":-4.4,"y":-1.1,"z":-3,"rx":0.5,"ry":0.6,"s":0.9,"spin":0.06,"op":0.6}' aria-label="Admin and modeling tools">
+      <div class="wrap tools-grid">
+        <div class="tools-left">
+          <p class="eyebrow" data-a>SP3D Tools workspace</p>
+          <h2 class="title" data-split>One workspace. <em>Every admin task automated.</em></h2>
+          <div class="launcher" id="launcher" role="tablist" aria-label="Tools"></div>
+        </div>
+        <div class="window glass" id="tool-window" role="tabpanel" aria-live="polite" data-a></div>
+      </div>
+    </section>
+
+    <!-- 10 DATA -->
+    <section class="page p-data" id="data" data-title="Bulkload & catalog data" data-sub="Data without spreadsheet pain" data-shape="datacolumns" data-pal="#45f0c8,#5be3ff" data-layout='{"x":0,"y":-1.4,"z":-3,"rx":0.42,"ry":-0.5,"s":0.95,"spin":0.04,"op":0.55}' aria-label="Bulkload and catalog data tools">
+      <div class="wrap">
+        <div class="head-row">
+          <div>
+            <p class="eyebrow" data-a>Bulkload &amp; catalog data</p>
+            <h2 class="title" data-split>Catalog data, <em>without the spreadsheet pain.</em></h2>
+          </div>
+        </div>
+        <div class="pipeline glass" data-a aria-label="Bulkload Extractor sample run">
+          <div class="pl-node"><b>Smart 3D databases</b><span>catalog · schema · model</span></div>
+          <div class="pl-wire" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="pl-node pl-core"><b>Bulkload Extractor</b><span>saved filter → grouped objects</span></div>
+          <div class="pl-wire" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="pl-node"><b>Bulkload workbooks</b><span>load order · read-back verified</span></div>
+          <div class="pl-stats">
+            <span><b data-count="25">0</b>objects</span><span><b data-count="75">0</b>occurrences</span><span><b data-count="109">0</b>worksheets</span>
+          </div>
+        </div>
+        <div class="data-cards" id="data-cards"></div>
+      </div>
+    </section>
+
+    <!-- 11 SYMBOLS -->
+    <section class="page p-sym" id="symbols" data-title="Symbols & supports" data-sub="Parametric engineering parts" data-shape="flange" data-pal="#ff8f4d,#ffc46b" data-layout='{"x":-4.4,"y":0,"z":-3.5,"rx":0.2,"ry":0.7,"s":0.95,"spin":0.09,"op":0.6}' aria-label="Symbols and supports">
+      <div class="wrap sym-grid">
+        <div class="sym-head">
+          <p class="eyebrow" data-a>Symbols, supports &amp; modeling</p>
+          <h2 class="title" data-split>Parametric parts, <em>resolved by code.</em></h2>
+        </div>
+        <div class="flange-demo glass" data-a>
+          <div class="fd-head"><b>Flange · automated bolt insertion</b><span>NPS 10 · ASME B16.5 (illustrative)</span></div>
+          <svg class="fd-svg" viewBox="0 0 300 300" role="img" aria-label="Flange face with its bolt circle">
+            <circle class="fd-face" cx="150" cy="150" r="102.4"/>
+            <circle class="fd-raised" cx="150" cy="150" r="81.6"/>
+            <circle class="fd-bore" cx="150" cy="150" r="64"/>
+            <circle class="fd-bc" cx="150" cy="150" r="91.2"/>
+            <g id="fd-bolts"></g>
+          </svg>
+          <div class="fd-ctrl" role="group" aria-label="Flange rating">
+            <button data-rating="150" aria-pressed="true">Class 150</button>
+            <button data-rating="300" aria-pressed="false">Class 300</button>
+            <button data-rating="600" aria-pressed="false">Class 600</button>
+          </div>
+          <p class="fd-out" aria-live="polite"><b id="fd-count">12</b> stud bolts · <b id="fd-dia">7/8"</b> — resolved from the bolt spec at runtime</p>
+        </div>
+        <div class="sym-side">
+          <div class="supports glass" data-a>
+            <div class="sup-head"><b>Hanger &amp; Support Library</b><span>8 parametric types · Symbol API</span></div>
+            <div class="sup-board" id="sup-board" role="group" aria-label="Support types — pick one"></div>
+            <p class="sup-note" id="sup-note" aria-live="polite"></p>
+          </div>
+          <div class="mini-row" data-a>
+            <button class="mini glass" data-lightbox="routecraft"><b>RouteCraft 3D</b><span>Pipe routing in the live model</span></button>
+            <button class="mini glass" data-lightbox="pid"><b>P&amp;ID → SP3D</b><span>Vision-read P&amp;IDs, auto-modeled</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12 THEATER -->
+    <section class="page p-theater" id="theater" data-title="Demo theater" data-sub="Watch the work" data-shape="screen" data-pal="#5be3ff,#9d8cff" data-layout='{"x":0,"y":0.5,"z":-4.5,"rx":0.05,"ry":0,"s":1,"spin":0,"op":0.5}' aria-label="Demo theater">
+      <div class="wrap theater-wrap">
+        <div class="center-head">
+          <p class="eyebrow" data-a>Demo theater</p>
+          <h2 class="title" data-split>Watch <em>the work.</em></h2>
+        </div>
+        <div class="coverflow" id="coverflow" aria-roledescription="carousel" aria-label="Demo videos" data-a>
+          <div class="cf-track" id="cf-track"></div>
+          <button class="cf-arrow cf-prev" aria-label="Previous video"><svg><use href="#i-prev"/></svg></button>
+          <button class="cf-arrow cf-next" aria-label="Next video"><svg><use href="#i-next"/></svg></button>
+        </div>
+        <div class="cf-caption" id="cf-caption" aria-live="polite" data-a></div>
+      </div>
+    </section>
+
+    <!-- 13 BEYOND -->
+    <section class="page p-beyond" id="beyond" data-title="Beyond SP3D" data-sub="AI, hologram & software" data-shape="galaxy" data-pal="#9d8cff,#ff8f4d" data-layout='{"x":0.8,"y":-0.3,"z":-2.5,"rx":0.75,"ry":0,"s":1.2,"spin":0.06,"op":0.9}' aria-label="Beyond SP3D">
+      <div class="wrap beyond-grid">
+        <div class="beyond-head">
+          <p class="eyebrow" data-a>Beyond SP3D</p>
+          <h2 class="title" data-split>AI, hologram <em>&amp; software builds.</em></h2>
+        </div>
+        <div class="holo-feature glass" data-a>
+          <button class="hf-media" data-video="hologram-assistant" aria-label="Play the 3D Model Hologram AI Assistant demo">
+            <video data-src="media/video/previews/hologram-assistant.mp4" poster="media/posters/hologram-assistant.webp" muted loop playsinline preload="none" aria-hidden="true"></video>
+            <span class="play-dot"><svg><use href="#i-play"/></svg></span>
+          </button>
+          <div class="hf-copy">
+            <span class="tag">AR / Hologram</span>
+            <h3>3D Model Hologram AI Assistant</h3>
+            <p>A hand-built hologram display with a voice-commanded AI avatar and a 3D model explorer.</p>
+          </div>
+        </div>
+        <div class="beyond-tiles" id="beyond-tiles"></div>
+      </div>
+    </section>
+
+    <!-- 14 MOTION, AVATARS & GAMES -->
+    <section class="page p-motion" id="motion" data-title="Motion &amp; avatars" data-sub="Body tracking, avatars &amp; games" data-shape="skeleton" data-pal="#45f0c8,#9d8cff" data-layout='{"x":-4.6,"y":-1.25,"z":-2.2,"rx":0.04,"ry":0.4,"s":0.78,"spin":0,"op":0.95}' aria-label="Motion tracking, avatars and games">
+      <div class="wrap motion-grid">
+        <div class="motion-head">
+          <p class="eyebrow" data-a>Motion, avatars &amp; games</p>
+          <h2 class="title" data-split>Your body <em>is the controller.</em></h2>
+          <p class="lede" data-a>Computer-vision and Unity builds that turn a person's movement — or conversation — into something interactive.</p>
+        </div>
+        <div class="motion-cards" id="motion-cards"></div>
+      </div>
+    </section>
+
+    <!-- 15 IOT -->
+    <section class="page p-iot" id="iot" data-title="IoT & robotics" data-sub="Hardware builds" data-shape="chip" data-pal="#ff8f4d,#5be3ff" data-layout='{"x":0,"y":0,"z":-3.5,"rx":-0.35,"ry":0,"s":1.3,"spin":0.0,"op":0.6}' aria-label="IoT and robotics">
+      <div class="wrap">
+        <div class="head-row">
+          <div>
+            <p class="eyebrow" data-a>IoT &amp; robotics</p>
+            <h2 class="title" data-split>Hardware builds — <em>sensors, motors, on-device ML.</em></h2>
+          </div>
+          <button class="power" id="power" aria-pressed="false" data-a><svg><use href="#i-power"/></svg><span>Power on</span></button>
+        </div>
+        <div class="iot-cards" id="iot-cards"></div>
+      </div>
+    </section>
+
+    <!-- 16 CONTACT -->
+    <section class="page p-contact" id="contact" data-title="Contact" data-sub="Let's build smarter plants" data-shape="knot" data-pal="#5be3ff,#9d8cff" data-layout='{"x":3.6,"y":0,"z":-1.5,"rx":0.3,"ry":0.3,"s":1,"spin":0.12,"op":0.8}' aria-label="Contact">
+      <div class="wrap contact-grid">
+        <div>
+          <p class="eyebrow" data-a>Contact</p>
+          <h2 class="mega-2" data-split>Let's build <em>smarter plants.</em></h2>
+          <p class="lede" data-a>Hiring for SP3D development, Smart&nbsp;3D administration or engineering automation? I'm happy to walk you through any tool in this tour.</p>
+          <div class="contact-list">
+            <div class="c-row glass" data-a>
+              <span class="c-ico"><svg><use href="#i-mail"/></svg></span>
+              <a href="mailto:jaindivyanshu005@gmail.com"><small>Email</small>jaindivyanshu005@<wbr>gmail.com</a>
+              <button class="icon-btn" data-copy="jaindivyanshu005@gmail.com" aria-label="Copy email address"><svg><use href="#i-copy"/></svg></button>
+            </div>
+            <a class="c-row glass" href="tel:+919589285530" data-a>
+              <span class="c-ico"><svg><use href="#i-phone"/></svg></span>
+              <span><small>Phone</small>+91 95892 85530</span>
+            </a>
+            <a class="c-row glass" href="https://www.linkedin.com/in/divyanshu-00" target="_blank" rel="noopener" data-a>
+              <span class="c-ico"><svg><use href="#i-in"/></svg></span>
+              <span><small>LinkedIn</small>linkedin.com/in/divyanshu-00</span>
+            </a>
+          </div>
+          <div class="cta-row" data-a>
+            <a class="btn btn-primary magnetic" href="mailto:jaindivyanshu005@gmail.com?subject=SP3D%20role%20%E2%80%94%20let%27s%20talk"><svg><use href="#i-mail"/></svg>Email me</a>
+            <button class="btn btn-ghost magnetic" data-go="0"><svg><use href="#i-restart"/></svg>Restart the tour</button>
+          </div>
+          <p class="legal" data-a>Smart 3D is a trademark of Hexagon. Revit and AutoCAD Plant 3D are trademarks of Autodesk.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Bottom chrome ===== -->
+  <footer class="bottom">
+    <div class="counter" aria-hidden="true"><b id="ctr-num">01</b><span>/ <span id="ctr-total">15</span></span><em id="ctr-title">Introduction</em></div>
+    <nav class="segments" id="segments" aria-label="Chapters"></nav>
+    <div class="nav-btns">
+      <button class="nav-btn prev magnetic" id="btn-prev" aria-label="Previous chapter"><svg><use href="#i-prev"/></svg></button>
+      <button class="nav-btn next magnetic" id="btn-next" aria-label="Next chapter"><span class="next-label"><small>Next</small><b id="next-title">About</b></span><svg><use href="#i-next"/></svg><span class="auto-ring" aria-hidden="true"></span></button>
+    </div>
+  </footer>
+
+  <!-- ===== Transition layers ===== -->
+  <div class="sweep" aria-hidden="true"><span></span></div>
+  <div class="titlecard" aria-hidden="true"><b id="tc-num">02</b><span id="tc-title">About</span></div>
+  <div class="sr-only" id="announcer" aria-live="polite"></div>
+
+  <!-- ===== Overlays ===== -->
+  <div class="overlay chapters" id="ov-chapters" role="dialog" aria-modal="true" aria-label="Chapters" hidden>
+    <div class="ov-head"><b>Chapters</b><button class="icon-btn" data-close aria-label="Close"><svg><use href="#i-close"/></svg></button></div>
+    <ol class="ch-grid" id="ch-grid"></ol>
+  </div>
+  <div class="overlay theater-ov" id="ov-video" role="dialog" aria-modal="true" aria-label="Video" hidden>
+    <div class="ov-head"><b id="ov-video-title">Demo</b><button class="icon-btn" data-close aria-label="Close video"><svg><use href="#i-close"/></svg></button></div>
+    <div class="ov-video-stage" id="ov-video-stage"></div>
+    <p class="ov-caption" id="ov-video-caption"></p>
+  </div>
+  <div class="overlay lightbox" id="ov-lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <div class="ov-head"><b id="lb-title">Gallery</b><button class="icon-btn" data-close aria-label="Close"><svg><use href="#i-close"/></svg></button></div>
+    <div class="lb-stage"><button class="lb-arrow lb-prev" aria-label="Previous image"><svg><use href="#i-prev"/></svg></button><img id="lb-img" alt=""><button class="lb-arrow lb-next" aria-label="Next image"><svg><use href="#i-next"/></svg></button></div>
+    <p class="ov-caption" id="lb-caption"></p>
+  </div>
+  <div class="overlay viewer-ov" id="ov-viewer" role="dialog" aria-modal="true" aria-label="Live SP3D to Web3D viewer" hidden>
+    <div class="ov-head"><b>SP3D → Web3D · live viewer</b><span class="ov-note">Drag to orbit · scroll to zoom · click objects</span><a class="icon-btn" href="demo/sp3d-to-web3d/" target="_blank" rel="noopener" aria-label="Open the viewer in a new tab"><svg><use href="#i-expand"/></svg></a><button class="icon-btn" data-close aria-label="Close viewer"><svg><use href="#i-close"/></svg></button></div>
+    <div class="viewer-stage" id="viewer-stage"></div>
+  </div>
+
+  <noscript><p class="noscript">This tour is best with JavaScript on — the chapters are shown below as a single page.</p></noscript>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js" defer></script>
+  <script type="module" src="js/scene.js"></script>
+</body>
+</html>
